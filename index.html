@@ -36,7 +36,7 @@
       <nav>
         <ul class="site-nav">
           <li class="nav-links">
-            <a href="./index.html" class="link link-current lineout">Studio</a>
+            <a href="./index.html" class="link lineout link-current">Studio</a>
           </li>
           <li class="nav-links">
             <a href="./portfolio.html" class="link lineout">Portfolio</a>
@@ -70,7 +70,7 @@
         </h1>
         <!-- </div> -->
 
-        <button type="button" class="orderbutton">Order Service</button>
+        <button type="button" class="orderbutton" data-modal-open>Order Service</button>
         <!-- </div> -->
       </section>
 
@@ -153,7 +153,6 @@
           <h2 class="section-title">Our Team</h2>
           <ul class="team-block">
             <li class="team-card">
-
               <img src="./images/img1.jpg" alt="Mark Guerrero" />
 
               <div class="card-description">
@@ -182,7 +181,7 @@
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
-                  </li> 
+                  </li>
 
                   <li class="socialicon">
                     <a>
@@ -223,7 +222,7 @@
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
-                  </li> 
+                  </li>
 
                   <li class="socialicon">
                     <a>
@@ -264,7 +263,7 @@
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
-                  </li> 
+                  </li>
 
                   <li class="socialicon">
                     <a>
@@ -305,7 +304,7 @@
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
-                  </li> 
+                  </li>
 
                   <li class="socialicon">
                     <a>
@@ -325,10 +324,9 @@
         <div class="container">
           <h2 class="section-title">Customers</h2>
           <ul class="customers-block">
-            
             <li class="customers-item">
-              <a href="">
-                <svg class="custicon" width="104px"  height="56px">
+              <a href="#" class="customers-link">
+                <svg class="custicon" width="104px" height="56px">
                   <use href="./images/icons.svg#icon-clientlogo1"></use>
                 </svg>
               </a>
@@ -336,35 +334,35 @@
 
             <li class="customers-item">
               <a href="">
-                <svg class="custicon" width="104px"  height="56px">
-                  <use href="./images/icons.svg#icon-clientlogo2"> </use>
+                <svg class="custicon" width="104px" height="56px">
+                  <use href="./images/icons.svg#icon-clientlogo2"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a href="">
-                <svg class="custicon" width="104px"  height="56px">
+                <svg class="custicon" width="104px" height="56px">
                   <use href="./images/icons.svg#icon-clientlogo3"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a href="">
-                <svg class="custicon" width="104px"  height="56px">
+                <svg class="custicon" width="104px" height="56px">
                   <use href="./images/icons.svg#icon-clientlogo4"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a href="">
-                <svg class="custicon" width="104px"  height="56px">
+                <svg class="custicon" width="104px" height="56px">
                   <use href="./images/icons.svg#icon-clientlogo5"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a href="">
-                <svg class="custicon" width="104px"  height="56px">
+                <svg class="custicon" width="104px" height="56px">
                   <use href="./images/icons.svg#icon-clientlogo4"></use>
                 </svg>
               </a>
@@ -389,40 +387,55 @@
         <div class="footer-socblock">
           <h3 class="footer-title">Social media</h3>
           <ul class="footer-soclist">
-            <li class="footer-socitem">
-              <a class="linkfooter" href="">
-
+            <li class="linkfooter">
+              <a class="footer-socitem" href="">
                 <svg width="24px" height="24px">
                   <use href="./images/icon.svg#icon-instfooter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-socitem fb">
-              <a class="linkfooter" href="">
-                <svg   width="24px" height="24px">
+            <li class="linkfooter">
+              <a class="footer-socitem fb" href="">
+                <svg width="24px" height="24px">
                   <use href="./images/icon.svg#icon-fbfoter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-socitem">
-              <a class="linkfooter" href="">
+            <li class="linkfooter">
+              <a class="footer-socitem" href="">
                 <svg width="24px" height="24px">
                   <use href="./images/icon.svg#icon-twfooter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-socitem">
-              <a class="linkfooter" href="">
+            <li class="linkfooter">
+              <a class="footer-socitem" href="">
                 <svg width="24px" height="24px">
                   <use href="./images/icon.svg#icon-lifooter"></use>
                 </svg>
               </a>
             </li>
-
-
-
           </ul>
+        </div>
       </section>
     </footer>
+
+<!-- ==================================================MODAL WINDOW========================================= -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-cls-button-icon">
+            <use href="./images/icons.svg#icon-closemodalbtn" ></use>
+          </svg>
+
+        </button>
+
+      </div>
+
+    </div>
+
+    <script src="./js/modal.js"></script>
+
   </body>
 </html>
